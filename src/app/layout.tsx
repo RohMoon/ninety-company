@@ -9,8 +9,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "나인티 컴퍼니 | Ninety Company",
-  description: "나인티 컴퍼니 소개",
+  metadataBase: new URL(process.env.SITE_URL ?? "http://localhost:3000"),
+  title: "오색 : 난장 | Ninety Company",
+  description:
+    "청·흑·적·백·황, 오색에 담긴 전통의 철학과 무속적 의미를 현대무용과 브레이킹으로 재해석한 오컬트 무용극 — 나인티 컴퍼니",
+  openGraph: {
+    title: "오색 : 난장 | Ninety Company",
+    description: "현대무용과 브레이킹으로 펼치는 오컬트 무용극",
+    images: ["/images/main.jpg"],
+    locale: "ko_KR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

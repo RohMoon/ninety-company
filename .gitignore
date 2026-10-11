@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw source materials (web-optimized copies live in public/images)
+/오색난장_홈페이지자료/
+/오색난장_홈페이지자료.zip
+/screenshots/
