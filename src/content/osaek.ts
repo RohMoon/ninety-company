@@ -2,8 +2,8 @@ export const HIGHLIGHT_VIDEO_ID = "zTXLqGjEbXo";
 export const CHANNEL_URL = "https://www.youtube.com/@%EC%B1%84%EB%84%90%EB%82%98%EC%9D%B8%ED%8B%B0";
 
 export const intent = {
-  ko: "오색 : 난장은 청·흑·적·백·황, 오색에 담긴 전통의 철학과 무속적 의미를 현대적으로 재해석한 공연입니다. 현대무용과 브레이킹을 결합해, 색이 품은 삶의 의미와 덕을 새로운 오컬트 무용극으로 펼쳐냅니다.",
-  en: "Osaek: Nanjang is a performance that reinterprets the traditional philosophy and shamanistic meanings of the five colors — blue, black, red, white, and yellow — through a contemporary lens. Blending contemporary dance with breaking, it unfolds the meanings of life and virtue embodied in these colors through a new form of occult dance theatre.",
+  ko: "오색 : 난장은 청·흑·적·백·황, 오색에 담긴 전통의 철학과 무속적 의미를 현대적으로 재해석한 공연입니다. 현대무용과 브레이킹을 결합해, 색이 품은 삶의 의미와 덕을 새로운 무용극으로 펼쳐냅니다.",
+  en: "Osaek: Nanjang is a performance that reinterprets the traditional philosophy and shamanistic meanings of the five colors — blue, black, red, white, and yellow — through a contemporary lens. Blending contemporary dance with breaking, it unfolds the meanings of life and virtue embodied in these colors through a new form of dance theatre.",
   image: "/images/intent.jpg",
 };
 
