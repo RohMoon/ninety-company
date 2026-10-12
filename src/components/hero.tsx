@@ -80,8 +80,11 @@ export function Hero() {
             tabIndex={-1}
             allow="autoplay; encrypted-media"
             onLoad={handleVideoLoad}
-            className="absolute left-1/2 top-1/2 h-[max(100svh,56.25vw)] w-[max(100vw,177.78svh)] -translate-x-1/2 -translate-y-1/2 scale-[1.15]"
+            className="absolute left-1/2 top-1/2 h-[max(100svh,56.25vw)] w-[max(100vw,177.78svh)] -translate-x-1/2 -translate-y-1/2 scale-[1.15] contrast-[1.12] saturate-[1.1]"
           />
+          {/* 원본 영상이 720p 가 최대라 전체 화면 확대 시 흐려진다 — 도트 스크린·그레인으로 무른 픽셀을 질감으로 덮는다 */}
+          <div className="video-dot-screen absolute inset-0" />
+          <div className="video-grain absolute inset-0" />
         </div>
       )}
 
