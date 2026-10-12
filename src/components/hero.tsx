@@ -125,7 +125,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 1.4, ease: EMPHASIZED_DECELERATE }}
         >
           <p className="mt-6 text-lg text-zinc-200 sm:text-xl">
-            Osaek : Nanjang — 현대무용과 브레이킹으로 펼치는 오컬트 무용극
+            Osaek : Nanjang — 현대무용과 브레이킹으로 펼치는 무용극
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
