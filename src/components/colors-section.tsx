@@ -33,6 +33,22 @@ function ColorScene({ color, index }: { color: OsaekColor; index: number }) {
         <p className="relative mt-8 text-lg leading-relaxed text-zinc-200">{color.ko}</p>
         <p className="relative mt-6 text-base leading-relaxed text-zinc-400">{color.en}</p>
       </Reveal>
+
+      {/* 이미지가 오른쪽인 장면은 이미지에 order-2 가 붙으므로 영상은 order-3 으로 항상 맨 아래에 둔다 */}
+      <Reveal className="lg:order-3 lg:col-span-12">
+        <p className="text-sm font-medium tracking-[0.3em] text-zinc-400">PERFORMANCE VIDEO</p>
+        <div className="relative mt-4 aspect-video overflow-hidden rounded-sm bg-zinc-900">
+          <iframe
+            src={`https://www.youtube-nocookie.com/embed/${color.videoId}?rel=0&playsinline=1`}
+            title={`${color.titleKo} 작품 영상`}
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className="absolute inset-0 h-full w-full"
+          />
+        </div>
+      </Reveal>
     </article>
   );
 }

@@ -132,16 +132,16 @@ export function Hero() {
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
-              href="#video"
+              href="#about"
               className="rounded-full bg-white px-6 py-3 text-base font-semibold text-black transition-colors hover:bg-zinc-200"
             >
-              하이라이트 보기
+              작품 소개
             </a>
             <a
-              href="#about"
+              href="#contact"
               className="rounded-full border border-white/40 px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-white/10"
             >
-              작품 소개
+              공연 문의
             </a>
           </div>
         </motion.div>
