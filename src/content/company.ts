@@ -57,5 +57,5 @@ export const awards: readonly YearEntry[] = [
 export const contact = {
   organization: "사단법인 나인티",
   person: "하치훈 단장",
-  phone: "010-7254-1526",
+  phone: "0507-1318-1526",
 };

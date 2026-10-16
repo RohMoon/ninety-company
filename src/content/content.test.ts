@@ -1,5 +1,16 @@
 import { describe, expect, it } from "vitest";
+import { contact } from "./company";
 import { colors, performanceTypes } from "./osaek";
+
+describe("공연문의 연락처", () => {
+  it("공개 페이지에는 개인 휴대폰(010) 이 아닌 대표번호를 쓴다", () => {
+    expect(contact.phone).not.toMatch(/^010-/);
+  });
+
+  it("전화 연결 링크로 쓸 수 있는 숫자-하이픈 형식이다", () => {
+    expect(contact.phone).toMatch(/^\d{2,4}-\d{3,4}-\d{4}$/);
+  });
+});
 
 const colorIds = new Set(colors.map((color) => color.id));
 
